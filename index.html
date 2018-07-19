@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery</title>
+        <script src = "js/jquery-3.3.1.js"> </script>
+        <script>
+          $(function(){
+              size = 16;
+              $("#btn").click(function(){
+                  $("#content").html("<h3>Welcome to JQuery</h3>");
+              });
+        
+            $("p").hover(function(){
+                $(this).css("background-color","yellow");
+            });
+              
+             $("p").mouseleave(function(){
+                $(this).css("background-color","white");
+            });
+              
+              $("#plus").click(function(){
+                  $("body").css("font-size",size++);
+              });
+               $("#minus").click(function(){
+                  $("body").css("font-size",size--);
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <hr>
+        <button id="btn">Click!</button>
+        <div id ="content"></div>
+        <p>
+            Getting started with jQuery can be easy or challenging, depending on your experience with JavaScript, HTML, CSS, and programming concepts in general. In addition to these articles, you can read about the history of jQuery and the licensing terms that apply to jQuery projects. You can also make a donation to help the jQuery team continue to improve jQuery.
+            
+        </p>
+    <p>
+        One important thing to know is that jQuery is just a JavaScript library. All the power of jQuery is accessed via JavaScript, so having a strong grasp of JavaScript is essential for understanding, structuring, and debugging your code. While working with jQuery regularly can, over time, improve your proficiency with JavaScript, it can be hard to get started writing jQuery without a working knowledge of JavaScript's built-in constructs and syntax. Therefore, if you're new to JavaScript, we recommend checking out the JavaScript basics tutorial on the Mozilla Developer Network (MDN).
+
+</p>
+   
+    </body>
+</html>
